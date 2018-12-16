@@ -48,14 +48,29 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "outputPath": "dist/my-project-es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
+            "es": {
+              "aot": true,
+              "outputPath": "dist/my-project-es/",
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/my-project-fr/",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
             }
+          
           }
         },
         "serve": {
@@ -66,6 +81,12 @@
           "configurations": {
             "production": {
               "browserTarget": "ngWatersTranslate:build:production"
+            },
+            "es": {
+              "browserTarget": "ngWatersTranslate:build:es"
+            },
+            "fr": {
+              "browserTarget": "ngWatersTranslate:build:fr"
             }
           }
         },

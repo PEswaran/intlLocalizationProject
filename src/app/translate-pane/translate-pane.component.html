@@ -1,0 +1,10 @@
+
+    <h4 i18n="@@translateHeading" align='center'>TRANSLATE</h4>
+    <h3 i18n="@@appTitle">Hello {{user}}</h3>
+    <h4 i18n="@@appContent">Translate: Hello World in one of the following languages </h4>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" *ngFor="let lang of supportedLanguages">
+        {{ lang.display }}
+      </button>
+    </div>
+

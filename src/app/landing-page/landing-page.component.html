@@ -1,0 +1,30 @@
+
+  <h1 i18n="@@appMain">This is main app content </h1>
+ 
+      <mat-list role="list">
+        <mat-list-item role="listitem"> 
+          1. Bootstrap a new application (ng new new-app --routing --style="scss"</mat-list-item>
+        <mat-list-item role="listitem">2.Open the html that needs translating and find the label<pre><code>&lt;h1&gt;helloworld&lt;\h1&gt;</code></pre>
+        </mat-list-item>
+      
+        <mat-list-item role="listitem">3.Use a custom id with a description.Define unique custom ids like so
+          <code class="html">&lt;h1 i18n="@@appTitle"&gt;helloworld&lt;\h1&gt;</code>
+        </mat-list-item>
+      
+        <mat-list-item role="listitem">4.Create a locale folder to store the xlf definition files <pre>(mkdir src/locale)</pre></mat-list-item>
+      
+        <mat-list-item role="listitem">5.Generate the default xlf file and place in locale folder <pre>(ng xi18n --output-path="locale") </pre></mat-list-item>
+     
+        <mat-list-item role="listitem">6.Generate the language version xlf file and place in locale folder this is Spanish<pre>(ng xi18n --output-path="locale" --out-file="messages.es.xlf")</pre></mat-list-item>
+     
+        <mat-list-item role="listitem">7.To build or serve in for a specific configuration/languague/locale run (ng serve -c=fr/es/it) </mat-list-item>
+        <mat-list-item role="listitem">8. The app will now reflect the translations in the specified language, notice the LOCALIZATION tab, the dates using Angular i18n native pipes will render the date and the </mat-list-item>
+    <h3 align='center'>Using Xiff Merge</h3>
+    <mat-list-item role="listitem">Download the xliffmerge library <pre>npm install ngx-i18nsupport --save</pre></mat-list-item>
+    <mat-list-item role="listitem">Create an xliffmerge.json file ()</mat-list-item>
+    <mat-list-item role ="listitem">Update package.json with the npm command to take care of the translatio and the merge in one signle command.<pre>"extract-i18n": "ng xi18n --output-path='locale' && xliffmerge --profile xliffmerge.json fr en"
+      </pre></mat-list-item>
+  </mat-list>
+
+
+  
